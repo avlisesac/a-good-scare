@@ -1,9 +1,11 @@
 import React from 'react';
+import MainComponent from './components/MainComponent'
+import './App.css'
 
 function App() {
   return (
     <div className="App">
-      <h1>App Root</h1>
+      <MainComponent />
     </div>
   );
 }
