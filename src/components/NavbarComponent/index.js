@@ -10,12 +10,12 @@ import Button from 'react-bootstrap/Button'
 const NavbarComponent = () => {
     return(
         <Navbar bg="dark" variant="dark" expand='md'>
-            <Navbar.Brand href="#home" className="creepster">AGS</Navbar.Brand>
+            <Navbar.Brand href="/home" className="creepster"><i className="fas fa-eye"></i> AGS</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <Nav.Link href="#about">About</Nav.Link>
+                    <Nav.Link href="/home">Home</Nav.Link>
+                    <Nav.Link href="/about">About</Nav.Link>
                 </Nav>
                 <Form inline>
                     <FormControl type="text" placeholder="Find a movie..." />

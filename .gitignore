@@ -11,6 +11,12 @@
 # production
 /build
 
+# source assets
+/source_assets
+
+# env
+.env
+
 # misc
 .DS_Store
 .env.local
