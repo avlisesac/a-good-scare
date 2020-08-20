@@ -6,9 +6,11 @@ import './index.css'
 
 //Bootstrap
 import Alert from 'react-bootstrap/Alert'
-import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import Card from 'react-bootstrap/Card'
 import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
 import Spinner from 'react-bootstrap/Spinner'
 
 
@@ -66,9 +68,13 @@ const MovieCardComponent = ({ id }) => {
 
     if(loadingStatus==='loading'){
         return(
-            <Spinner animation="border" role="status">
-                <span className='sr-only'>Loading...</span>
-            </Spinner>
+            <Container className="mt-5">
+                <Row className="justify-content-center">
+                    <Spinner animation="border" role="status">
+                        <span className='sr-only'>Loading...</span>
+                    </Spinner>
+                </Row>
+            </Container>
         )
     }
 
